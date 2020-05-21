@@ -103,6 +103,55 @@ h2 {
 main > article {
   padding: 24px 16px;
 }
+
+/* Carousel */
+
+.slider {
+  position: relative;
+  display: flex;
+}
+
+.slider .frame {
+   width: 100%;
+
+   position: relative;
+   overflow: hidden;
+   white-space: nowrap;
+}
+
+.slider .slides {
+  display: inline-block;
+  width: 100%;
+}
+
+.slider li {
+  position: relative;
+  display: inline-block;
+
+  width: 100%;
+}
+
+.slider .prev, .slider .next {
+  display: block;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+}
+
+.slider .next {
+  right: 0;
+}
+
+.slider .prev {
+  left: 0;
+}
+
+.slider .next svg,
+.slider .prev svg {
+  width: 25px;
+}
+
 /* menu */
 
 /* hero */
@@ -209,8 +258,8 @@ main > article {
 }
 
 .price_card {
-  width: 300px;
-  margin: 24px auto;
+  width: 250px;
+  margin: 24px auto 0;
   border-radius: 8px;
   overflow: hidden;
 
@@ -219,7 +268,7 @@ main > article {
 
 .price_card .title {
   background-color: #cce4fe;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   padding: 16px;
   color: #1565c0;
@@ -244,10 +293,7 @@ main > article {
 }
 
 .price_card .button {
-  font-size: 24px;
-  padding: 11px 40px 15px;
-  margin: 0 auto;
-  display: inline-block;
+
 }
 
 /* FAQ */

@@ -121,22 +121,96 @@
   <article class="price">
     <h2>Наши цены</h2>
 
-    <div class="price_card">
-      <div class="title">
-        5 выписок
-      </div>
-      <div class="content">
-        <div class="amount">
-          625 руб
+    <div class="slider js_slider">
+        <div class="js_prev prev">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 240.823 240.823"><g><path id="Chevron_Right" fill="#1565c0" d="M57.633,129.007L165.93,237.268c4.752,4.74,12.451,4.74,17.215,0c4.752-4.74,4.752-12.439,0-17.179 l-99.707-99.671l99.695-99.671c4.752-4.74,4.752-12.439,0-17.191c-4.752-4.74-12.463-4.74-17.215,0L57.621,111.816 C52.942,116.507,52.942,124.327,57.633,129.007z"/></g></svg>
         </div>
-        <div class="desc">
-          125 руб. за выписку
+        <div class="frame js_frame">
+            <ul class="slides js_slides">
+
+              <li class="js_slide">
+                <div class="price_card">
+                  <div class="title">
+                    1 выписка
+                  </div>
+                  <div class="content">
+                    <div class="amount">
+                      150 руб
+                    </div>
+                    <div class="desc">
+                      &nbsp;
+                    </div>
+                    <a href="#" class="button">
+                      Купить
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="js_slide">
+                <div class="price_card">
+                  <div class="title">
+                    5 выписок
+                  </div>
+                  <div class="content">
+                    <div class="amount">
+                      625 руб
+                    </div>
+                    <div class="desc">
+                      125 руб. за выписку
+                    </div>
+                    <a href="#" class="button">
+                      Купить
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="js_slide">
+                <div class="price_card">
+                  <div class="title">
+                    10 выписок
+                  </div>
+                  <div class="content">
+                    <div class="amount">
+                      1000 руб
+                    </div>
+                    <div class="desc">
+                      100 руб. за выписку
+                    </div>
+                    <a href="#" class="button">
+                      Купить
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="js_slide">
+                <div class="price_card">
+                  <div class="title">
+                    50 выписок
+                  </div>
+                  <div class="content">
+                    <div class="amount">
+                      3000 руб
+                    </div>
+                    <div class="desc">
+                      60 руб. за выписку
+                    </div>
+                    <a href="#" class="button">
+                      Купить
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
         </div>
-        <a href="#" class="button">
-          Купить
-        </a>
-      </div>
+        <div class="js_next next">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#2E435A" viewBox="0 0 240.823 240.823"><g><path id="Chevron_Right_1_" fill="#1565c0" d="M183.189,111.816L74.892,3.555c-4.752-4.74-12.451-4.74-17.215,0c-4.752,4.74-4.752,12.439,0,17.179 l99.707,99.671l-99.695,99.671c-4.752,4.74-4.752,12.439,0,17.191c4.752,4.74,12.463,4.74,17.215,0l108.297-108.261 C187.881,124.315,187.881,116.495,183.189,111.816z"/></g></svg>
+        </div>
     </div>
+
 
   </article>
 
@@ -347,5 +421,13 @@
   </footer>
 
 </main>
+<script src="./js/lory.min.js"></script>
+<script>
+  lory(
+    document.querySelector('.js_slider'), {
+      // infinite: 1,
+      rewind: true
+    })
+</script>
 </body>
 </html>
