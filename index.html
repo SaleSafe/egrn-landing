@@ -10,10 +10,25 @@
   <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
+<div class="pageStart"></div>
 <header class="menu">
-  header
-  <nav>nav</nav>
+  <!-- header -->
+  <!-- <nav>nav</nav> -->
 </header>
+<script>
+  /* https://dev.to/bhupendra1011/how-to-know-when-css-position-sticky-get-s-applied-4gk2 */
+  var observer = new IntersectionObserver(function(entries) {
+    var el = document.querySelector(".menu")
+
+    if (entries[0].intersectionRatio === 0)
+      el.classList.add("sticky")
+    else if (entries[0].intersectionRatio === 1)
+      el.classList.remove("sticky")
+
+  }, { threshold: [0, 1] })
+
+  observer.observe(document.querySelector(".pageStart"))
+</script>
 <main>
 
 
