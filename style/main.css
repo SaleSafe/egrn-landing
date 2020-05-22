@@ -53,6 +53,7 @@ table {
 
 html, body {
   font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* common */
@@ -106,6 +107,7 @@ h2 {
 
 main > article {
   padding: 24px 16px;
+  scroll-margin: 60px;
 }
 
 /* Carousel */
@@ -159,7 +161,7 @@ main > article {
 /* menu */
 .menu {
   position: sticky;
-  margin-bottom: -72px;
+  margin-bottom: -60px;
   top: 0;
   z-index: 100;
   transition: box-shadow .3s ease;

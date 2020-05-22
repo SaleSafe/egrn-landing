@@ -19,18 +19,22 @@
         document
           .querySelector('.menu')
           .classList
-          .toggle('open')
-      }
+          .toggle('open')}
+      function closeMenu () {
+        document
+          .querySelector('.menu')
+          .classList
+          .remove('open')}
     </script>
     <span class="dropdown__title button" onClick="toggleMenu()">
       <img src="./img/icons/menu.svg" alt="Menu button">
     </span>
     <ul class="dropdown__menu" aria-labelledby="dropdown-title">
-      <li><a href="#why">Почему мы</a></li>
-      <li><a href="#how">Как заказать</a></li>
-      <li><a href="#price">Цены</a></li>
-      <li><a href="#types">Виды выписок</a></li>
-      <li><a href="#feedback">Отзывы</a></li>
+      <li><a onClick="closeMenu()" href="#why">Почему мы</a></li>
+      <li><a onClick="closeMenu()" href="#how">Как заказать</a></li>
+      <li><a onClick="closeMenu()" href="#price">Цены</a></li>
+      <li><a onClick="closeMenu()" href="#types">Виды выписок</a></li>
+      <li><a onClick="closeMenu()" href="#feedback">Отзывы</a></li>
     </ul>
   </div>
 </nav>
@@ -52,7 +56,7 @@
 
   observer.observe(document.querySelector(".pageStart"))
 </script>
-<main>
+<main onClick="closeMenu()">
 
 
   <article class="hero">
@@ -79,7 +83,7 @@
     </form>
   </article>
 
-  <article class="why">
+  <article id="why" class="why">
     <h2>Почему мы?</h2>
     <ul>
 
@@ -145,7 +149,7 @@
     </div>
   </article>
 
-  <article class="how">
+  <article id="how" class="how">
     <h2>Как заказать выписку</h2>
     <ul>
 
@@ -177,7 +181,7 @@
     </ul>
   </article>
 
-  <article class="price">
+  <article id="price" class="price">
     <h2>Наши цены</h2>
 
     <div class="slider js_slider">
@@ -273,15 +277,15 @@
 
   </article>
 
-  <article class="type">
+  <article id="types" class="types">
 
   </article>
 
-  <article class="feedback">
+  <article id="feedback" class="feedback">
 
   </article>
 
-  <article class="faq">
+  <article id="faq" class="faq">
 
     <details>
       <summary>
