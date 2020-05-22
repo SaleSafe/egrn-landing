@@ -151,8 +151,8 @@ main > article {
   left: 0;
 }
 
-.slider .next svg,
-.slider .prev svg {
+.slider .next img,
+.slider .prev img {
   width: 25px;
 }
 
