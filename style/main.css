@@ -159,16 +159,64 @@ main > article {
 /* menu */
 .menu {
   position: sticky;
-  height: 65px;
-  margin-bottom: -65px;
+  margin-bottom: -72px;
   top: 0;
   z-index: 100;
-  transition: all .3s ease;
+  transition: box-shadow .3s ease;
+  padding: 10px;
+  display: flex;
 }
 
 .menu.sticky {
   background-color: #ffffff77;
+  backdrop-filter: blur(2px);
   box-shadow: 0px 5px 9.6px 0.4px rgba(90, 95, 100, 0.2);
+}
+
+.menu .button {
+  padding: 10px 12px;
+}
+
+.menu .button img {
+  height: 20px;
+}
+
+.dropdown {
+
+}
+
+.menu.open {
+  transition: none;
+  background-color: #fff;
+}
+
+.menu.open .dropdown__menu {
+  display: block;
+}
+.menu .dropdown__menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 10px 9.6px 0.4px rgba(90, 95, 100, 0.2);
+  padding: 16px 0;
+}
+
+.menu .dropdown__menu li a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1565c0;
+  padding: 12px 16px;
+}
+
+.login {
+  margin: 0;
+  margin-left: auto;
 }
 /* hero */
 

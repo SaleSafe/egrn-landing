@@ -12,8 +12,31 @@
 <body>
 <div class="pageStart"></div>
 <header class="menu">
-  <!-- header -->
-  <!-- <nav>nav</nav> -->
+<nav aria-label="Main Navigation">
+  <div class="dropdown" id="header_nav">
+    <script>
+      function toggleMenu () {
+        document
+          .querySelector('.menu')
+          .classList
+          .toggle('open')
+      }
+    </script>
+    <span class="dropdown__title button" onClick="toggleMenu()">
+      <img src="./img/icons/menu.svg" alt="Menu button">
+    </span>
+    <ul class="dropdown__menu" aria-labelledby="dropdown-title">
+      <li><a href="#why">Почему мы</a></li>
+      <li><a href="#how">Как заказать</a></li>
+      <li><a href="#price">Цены</a></li>
+      <li><a href="#types">Виды выписок</a></li>
+      <li><a href="#feedback">Отзывы</a></li>
+    </ul>
+  </div>
+</nav>
+<a class="button login" href="#">
+  <img src="./img/icons/login.svg" alt="Login button">
+</a>
 </header>
 <script>
   /* https://dev.to/bhupendra1011/how-to-know-when-css-position-sticky-get-s-applied-4gk2 */
