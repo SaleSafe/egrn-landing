@@ -342,6 +342,7 @@ main > article {
   width: 60px;
   height: 60px;
   margin-right: 16px;
+  flex-shrink: 0;
 }
 
 .why_item .advantage {
@@ -371,9 +372,12 @@ main > article {
 }
 
 .how ul {
+  margin: 0 auto;
   margin-top: 32px;
+  margin-bottom: -24px;
   color: #1565c0;
   line-height: 24px;
+  max-width: 250px;
 }
 
 .how_item {
