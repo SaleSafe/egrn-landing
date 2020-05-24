@@ -122,7 +122,6 @@ main > article {
 
    position: relative;
    overflow: hidden;
-   white-space: nowrap;
 }
 
 .slider .slides {
@@ -445,8 +444,64 @@ main > article {
   margin-bottom: 20px;
 }
 
-.price_card .button {
+/* Types */
 
+.types {
+  background-color: #dbeafb;
+}
+
+.types h2 {
+  margin-bottom: 24px;
+}
+
+.types .type {
+  max-width: 100%;
+  text-align: center;
+  color: #1565c0;
+}
+
+.types .type .report {
+  width: 250px;
+  max-width: 90%;
+  height: 357px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 12px 13px 0 rgba(24, 55, 90, 0.09);
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.types .type .report .label {
+  position: absolute;
+  top: 24px;
+  right: 0;
+  background-color: #86befb;
+  padding: 4px 8px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.types .type .report img {
+  width: 100%;
+}
+
+.types .type h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.types .type p {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0 16px;
+  margin-bottom: 24px;
+}
+
+.types .type .button {
+  margin-bottom: 16px;
 }
 
 /* FAQ */
