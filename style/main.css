@@ -535,7 +535,7 @@ main > article {
 }
 
 .feedback_slider {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .feedback .review {
@@ -591,6 +591,8 @@ main > article {
 
 .feedback form input,
 .feedback form textarea {
+  font: inherit;
+  font-size: 13px;
   width: 100%;
   padding: 16px;
   border-radius: 4px;
