@@ -237,6 +237,7 @@ main > article {
   margin: 0;
   margin-left: auto;
 }
+
 /* hero */
 
 .hero {
@@ -522,7 +523,15 @@ main > article {
   margin-bottom: 16px;
 }
 
+/* Feedback */
+
+.feedback {
+  background-color: #e6f0fc;
+  border-bottom: 1px solid #dbeafb;
+}
+
 /* FAQ */
+
 .faq {
   background-color: #e6f0fc;
   font-size: 14px;
