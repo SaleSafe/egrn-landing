@@ -12,20 +12,7 @@
 <body>
 <div class="pageStart"></div>
 <header class="menu">
-<nav aria-label="Main Navigation">
-  <div class="dropdown" id="header_nav">
-    <script>
-      function toggleMenu () {
-        document
-          .querySelector('.menu')
-          .classList
-          .toggle('open')}
-      function closeMenu () {
-        document
-          .querySelector('.menu')
-          .classList
-          .remove('open')}
-    </script>
+  <nav class="dropdown" id="header_nav" aria-label="Main Navigation">
     <span class="dropdown__title button" onClick="toggleMenu()">
       <img src="./img/icons/menu.svg" alt="Menu button">
     </span>
@@ -36,15 +23,26 @@
       <li><a onClick="closeMenu()" href="#types">Виды выписок</a></li>
       <li><a onClick="closeMenu()" href="#feedback">Отзывы</a></li>
     </ul>
+  </nav>
+  <div class="logo">
+    GISAN
   </div>
-</nav>
-<div class="logo">
-  GISAN
-</div>
-<a class="button login" href="#">
-  <img src="./img/icons/login.svg" alt="Login button">
-</a>
+  <a class="button login" href="#">
+    <img src="./img/icons/login.svg" alt="Login button">
+  </a>
 </header>
+<script>
+  function toggleMenu () {
+    document
+      .querySelector('.menu')
+      .classList
+      .toggle('open')}
+  function closeMenu () {
+    document
+      .querySelector('.menu')
+      .classList
+      .remove('open')}
+</script>
 <script>
   /* https://dev.to/bhupendra1011/how-to-know-when-css-position-sticky-get-s-applied-4gk2 */
   var observer = new IntersectionObserver(function(entries) {
@@ -60,7 +58,6 @@
   observer.observe(document.querySelector(".pageStart"))
 </script>
 <main onClick="closeMenu()">
-
 
   <article id="start" class="hero">
     <div class="home">
