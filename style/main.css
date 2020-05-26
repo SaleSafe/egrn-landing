@@ -341,7 +341,8 @@ main > article {
 }
 
 .why ul {
-  margin-bottom: 8px;
+  max-width: 350px;
+  margin: 0 auto 8px;
 }
 
 .why_item {
@@ -539,6 +540,8 @@ main > article {
 }
 
 .feedback .review {
+  max-width: 300px;
+  margin: 0 auto;
   padding: 0 4px;
 }
 
