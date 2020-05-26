@@ -277,11 +277,11 @@
       </div>
     </div>
 
-
   </article>
 
   <article id="types" class="types">
     <h2>Виды выписок из&nbsp;ЕГРН</h2>
+
     <div class="type_slider slider js_slider">
       <div class="js_prev prev">
         <img src="./img/icons/slider_left.svg" alt="slide left">
@@ -372,7 +372,129 @@
   </article>
 
   <article id="feedback" class="feedback">
+    <h2>Отзывы наших клиентов</h2>
 
+    <div class="feedback_slider slider js_slider">
+      <div class="js_prev prev">
+        <img src="./img/icons/slider_left.svg" alt="slide left">
+      </div>
+      <div class="frame js_frame">
+        <ul class="slides js_slides">
+
+          <li class="js_slide">
+            <div class="review">
+              <div class="author">
+                <!-- style="background-image: url(./img/icons/slider_left.svg)" -->
+                <div
+                  class="face">
+                </div>
+                <div class="info">
+                  <div class="name">
+                    Виктор
+                  </div>
+                  <div class="etc">
+                    г.Екатеринбург, 29.01.2020
+                  </div>
+                </div>
+              </div>
+              <quote class="content">
+                Спасибо за&nbsp;полезный сервис. Мне, как риэлтору, часто
+                приходится заказывать выписки из&nbsp;ЕГРН, проверяя квартиры
+                перед сделкой. Раньше обращался в&nbsp;МФЦ,
+                стояли в&nbsp;очередях, да&nbsp;и&nbsp;цена
+                не&nbsp;радовала. Коллега посоветовал получать онлайн.
+                Протестировал несколько сервисов. Тыща
+                их&nbsp;в&nbsp;интернете))
+                В&nbsp;результате остановился
+                на&nbsp;этом. Быстро, понятно,
+                ни&nbsp;разу не&nbsp;подвели.
+              </quote>
+            </div>
+          </li>
+
+          <li class="js_slide">
+            <div class="review">
+              <div class="author">
+                <!-- style="background-image: url(./img/icons/slider_left.svg)" -->
+                <div
+                  class="face">
+                </div>
+                <div class="info">
+                  <div class="name">
+                    Галина
+                  </div>
+                  <div class="etc">
+                    г.Москва, 13.03.2020
+                  </div>
+                </div>
+              </div>
+              <quote class="content">
+                В&nbsp;феврале заказывали выписку для получения копии ключа
+                от&nbsp;домофона и&nbsp;выбрала этот сайт. Через 3&nbsp;дня
+                выписку так и&nbsp;не&nbsp;получила. Вначале я&nbsp;расстроилась,
+                думала развод. Написала в&nbsp;поддержку. Менеджер Иван сказал,
+                что был сбой в&nbsp;какой-то федеральной базе, извинился
+                и&nbsp;вернул деньги, а&nbsp;ещё через 2&nbsp;дня выписка пришла.
+              </quote>
+            </div>
+          </li>
+
+          <li class="js_slide">
+            <div class="review">
+              <div class="author">
+                <!-- style="background-image: url(./img/icons/slider_left.svg)" -->
+                <div
+                  class="face">
+                </div>
+                <div class="info">
+                  <div class="name">
+                    Александр
+                  </div>
+                  <div class="etc">
+                    г.Санкт-Петербург, 26.04.2020
+                  </div>
+                </div>
+              </div>
+              <quote class="content">
+                Квартиру выбрали сами, без риэлтора. Дабы не&nbsp;попасть
+                впросак проверяли собственника и&nbsp;квартиру.
+                В&nbsp;интернете только этот сайт внушал доверие.
+                За&nbsp;Х&nbsp;рублей всё проверили.
+                Риэлтор&nbsp;бы сделал тоже самое за&nbsp;10000&nbsp;руб. минимум.
+              </quote>
+            </div>
+          </li>
+
+          <li class="js_slide">
+            <div class="review">
+              <div class="author">
+                <!-- style="background-image: url(./img/icons/slider_left.svg)" -->
+                <div
+                  class="face">
+                </div>
+                <div class="info">
+                  <div class="name">
+                    Анна
+                  </div>
+                  <div class="etc">
+                    г.Самара, 20.05.2020
+                  </div>
+                </div>
+              </div>
+              <quote class="content">
+                Хотела узнать кто владел моим садом до меня.
+                Даже не спрашивайте зачем))).
+                Заказала выписку о переходе прав минут за 5.
+              </quote>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+      <div class="js_next next">
+        <img src="./img/icons/slider_right.svg" alt="slide right">
+      </div>
+    </div>
   </article>
 
   <article id="faq" class="faq">
@@ -628,6 +750,12 @@
 
   lory(
     document.querySelector('.type_slider'), {
+      rewind: true,
+      rewindPrev: true
+    })
+
+  lory(
+    document.querySelector('.feedback_slider'), {
       rewind: true,
       rewindPrev: true
     })

@@ -530,6 +530,57 @@ main > article {
   border-bottom: 1px solid #dbeafb;
 }
 
+.feedback h2 {
+  margin-bottom: 24px;
+}
+
+.feedback .review {
+  padding: 0 4px;
+}
+
+.feedback .review .author {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.feedback .review .author .face {
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 70px;
+  width: 70px;
+  background-color: #fff;
+  margin-left: 15px;
+  margin-right: 16px;
+}
+
+.feedback .review .author .name {
+  font-size: 20px;
+  color: #1565c0;
+}
+
+.feedback .review .author .etc {
+  font-size: 12px;
+  color: #7f8994;
+  margin: 8px 0;
+}
+
+.feedback .review .content {
+  font-size: 14px;
+  line-height: 1.25;
+  color: #7f8994;
+  display: flex;
+}
+
+.feedback .review .content::before {
+  content: "“";
+  font-size: 200px;
+  margin-right: 16px;
+  color: #cce4fe;
+  line-height: 140px;
+}
+
 /* FAQ */
 
 .faq {
