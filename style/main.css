@@ -477,6 +477,7 @@ main > article {
     width: 60px;
     height: 60px;
     line-height: 60px;
+    margin-right: 0;
     margin-bottom: 36px;
   }
 }
@@ -835,16 +836,37 @@ footer {
 }
 
 footer .support {
+  padding: 24px 16px;
   display: flex;
   flex-direction: column-reverse;
+  margin-bottom: 8px;
+} @media (min-width: 1000px) {
+  footer .support {
+    margin: 0;
+    padding: 40px 24px 24px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .support > * {
+    width: 30%;
+  }
 }
 
 footer .support nav {
   display: none;
+} @media (min-width: 1000px) {
+  footer .support nav {
+    display: block;
+    columns: 2;
+    line-height: 30px;
+    margin-top: 25px;
+    color: #7f8994;
+  }
 }
 
-footer .support {
-  padding: 24px 16px;
+footer .support nav a {
+  color: inherit;
+  text-decoration: none;
 }
 
 footer .support .contacts .contact {
@@ -884,7 +906,7 @@ footer .support .payment-systems .robokassa {
   height: 20px;
   background: url(../img/logo_robokassa.png) no-repeat;
   background-position: center;
-  background-size: 50%;
+  background-size: contain;
   margin: 24px 0;
   opacity: 0.6;
 }
@@ -926,7 +948,6 @@ footer .support .payment-systems .card.paypal {
 }
 
 footer .copyright {
-  margin-top: 8px;
   text-align: center;
   color: #7f8994;
   font-size: 12px;
