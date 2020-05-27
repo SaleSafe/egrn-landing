@@ -119,7 +119,8 @@ main > article {
   main > article {
     padding: 40px 24px;
   }
-  main > article .wrap {
+
+  .wrap {
     margin: 0 auto;
     max-width: 1000px;
   }
@@ -554,9 +555,9 @@ main > article {
     overflow: auto;
     transition: all 0.3s ease;
   }
-}
-.price_card:hover {
-  transform: scale(1.1);
+  .price_card:hover {
+    transform: scale(1.1);
+  }
 }
 
 .price_card .title {
@@ -752,6 +753,21 @@ main > article {
 .faq {
   background-color: #e6f0fc;
   font-size: 14px;
+} @media (min-width: 1000px) {
+  .faq {
+    font-size: 16px;
+  }
+}
+
+.faq img {
+  display: none;
+} @media (min-width: 1000px) {
+  .faq img {
+    display: block;
+    float: right;
+    width: 310px;
+    margin-right: 35px;
+  }
 }
 
 .faq details {
@@ -759,6 +775,7 @@ main > article {
   border: solid 1px #d4e6fb;
   line-height: 1.3;
   color: #7f8994;
+  max-width: 600px;
 }
 
 .faq details[open] summary {
@@ -769,6 +786,7 @@ main > article {
   padding: 12px;
   display: flex;
   align-items: baseline;
+  cursor: pointer;
 }
 
 .faq details summary > * {
@@ -784,10 +802,15 @@ main > article {
   padding: 0;
   max-width: calc(100% - 20px);
   text-align: left;
+  margin-bottom: 0;
 }
 
 .faq details .answer {
   padding: 6px 12px 0;
+} @media (min-width: 1000px) {
+  .faq details .answer {
+    padding: 16px 32px;
+  }
 }
 
 .faq a {
