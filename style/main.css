@@ -350,12 +350,12 @@ main > article {
 .why ul {
   max-width: 350px;
   margin: 0 auto 8px;
-} @media (min-width: 600px) {
+} @media (min-width: 750px) {
   .why ul {
-    max-width: 900px;
+    max-width: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 }
 
@@ -365,7 +365,7 @@ main > article {
 
   padding: 16px 0 24px;
   border-top: 1px solid #ebeef1;
-} @media (min-width: 600px) {
+} @media (min-width: 750px) {
   .why .why_item {
     border: none;
     flex-direction: column;
@@ -383,7 +383,7 @@ main > article {
   height: 60px;
   margin-right: 16px;
   flex-shrink: 0;
-} @media (min-width: 600px) {
+} @media (min-width: 750px) {
   .why .why_icon {
     margin: 0 0 16px;
     width: 90px;
@@ -393,9 +393,14 @@ main > article {
 
 .why_item .advantage {
 
-} @media (min-width: 600px) {
+} @media (min-width: 750px) {
   .why_item .advantage {
-    max-width: 220px;
+    width: 310px;
+  }
+} @media (min-width: 1000px) {
+  .why_item .advantage {
+    width: auto;
+    max-width: 310px;
   }
 }
 
