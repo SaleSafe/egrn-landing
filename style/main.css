@@ -458,6 +458,9 @@ main > article {
     align-items: center;
     text-align: center;
   }
+  .how_item:last-child {
+    width: 220px;
+  }
 }
 
 .how_item .step {
