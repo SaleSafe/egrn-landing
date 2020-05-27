@@ -119,6 +119,10 @@ main > article {
   main > article {
     padding: 40px 24px;
   }
+  main > article .wrap {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
 }
 
 /* Carousel */
@@ -507,6 +511,34 @@ main > article {
   padding-bottom: 40px;
 }
 
+@media (min-width: 1000px) {
+  .price_slider .prev,
+  .price_slider .next {
+    display: none;
+  }
+}
+
+.price_slider .js_slide {
+
+} @media (min-width: 600px) {
+  .price_slider .js_slide {
+    width: 50%;
+  }
+} @media (min-width: 1000px) {
+  .price_slider .js_slide {
+    width: 25%;
+    /*margin-top: -32px;*/
+  }
+}
+
+.price_slider .frame {
+
+} @media (min-width: 1000px) {
+  .price_slider .frame {
+    overflow: visible;
+  }
+}
+
 .price_card {
   max-width: 250px;
   width: 90%;
@@ -515,6 +547,16 @@ main > article {
   overflow: hidden;
 
   text-align: center;
+} @media (min-width: 1000px) {
+  .price_card {
+    margin-top: 0;
+    margin-bottom: 16px;
+    overflow: auto;
+    transition: all 0.3s ease;
+  }
+}
+.price_card:hover {
+  transform: scale(1.1);
 }
 
 .price_card .title {
