@@ -793,7 +793,8 @@ main > article {
 }
 
 .feedback form {
-
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .feedback form input,
