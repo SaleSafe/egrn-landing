@@ -397,7 +397,7 @@ main > article {
   .why_item .advantage {
     width: 310px;
   }
-} @media (min-width: 1000px) {
+} @media (min-width: 1040px) {
   .why_item .advantage {
     width: auto;
     max-width: 310px;
@@ -603,12 +603,21 @@ main > article {
 
 .types h2 {
   margin-bottom: 24px;
+} @media (min-width: 1000px) {
+  .types h2 {
+    margin-bottom: 56px;
+  }
 }
 
 .types .type {
   max-width: 100%;
   text-align: center;
   color: #1565c0;
+} @media (min-width: 750px) {
+  .types .type {
+    text-align: left;
+    padding: 0 24px;
+  }
 }
 
 .types .type .report {
@@ -620,6 +629,13 @@ main > article {
   box-shadow: 0px 12px 13px 0 rgba(24, 55, 90, 0.09);
   margin-bottom: 24px;
   position: relative;
+} @media (min-width: 750px) {
+  .types .type .report {
+    float: left;
+    clear: left;
+    margin-left: 16px;
+    margin-right: 56px;
+  }
 }
 
 .types .type .report .label {
@@ -642,13 +658,23 @@ main > article {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 8px;
+} @media (min-width: 750px) {
+  .types .type h3 {
+    font-size: 22px;
+    padding-top: 24px;
+    margin-bottom: 24px;
+  }
 }
 
 .types .type p {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.5;
   padding: 0 16px;
   margin-bottom: 24px;
+} @media (min-width: 1000px) {
+  .types .type p {
+    font-size: 16px;
+  }
 }
 
 .types .type .button {
