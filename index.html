@@ -10,8 +10,13 @@
   <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
-<div class="pageStart"></div>
+<div class="page_start"></div>
+
 <header class="menu">
+<div class="wrap">
+
+  <div class="logo_placeholder"></div>
+
   <nav class="dropdown" id="header_nav" aria-label="Main Navigation">
     <span class="dropdown__title button" onClick="toggleMenu()">
       <img src="./img/icons/menu.svg" alt="Menu button">
@@ -24,13 +29,18 @@
       <li><a onClick="closeMenu()" href="#feedback">Отзывы</a></li>
     </ul>
   </nav>
-  <div class="logo">
+
+  <a href="#" class="logo logo_mobile">
     GISAN
-  </div>
+  </a>
+
   <a class="button login" href="#">
     <img src="./img/icons/login.svg" alt="Login button">
   </a>
+
+</div>
 </header>
+
 <script>
   function toggleMenu () {
     document
@@ -55,9 +65,16 @@
 
   }, { threshold: [0, 1] })
 
-  observer.observe(document.querySelector(".pageStart"))
+  observer.observe(document.querySelector(".page_start"))
 </script>
+
 <main onClick="closeMenu()">
+
+  <div class="logo_desktop wrap">
+    <a href="#" class="logo">
+      GISAN
+    </a>
+  </div>
 
   <article id="start" class="hero">
     <div class="home">
