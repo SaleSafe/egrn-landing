@@ -709,13 +709,21 @@ main > article {
 }
 
 .feedback_slider {
-  margin-bottom: 32px;
+  margin-bottom: 48px;
+} @media (min-width: 750px) {
+  .feedback_slider .js_slide {
+    width: 50%;
+  }
 }
 
 .feedback .review {
   max-width: 300px;
   margin: 0 auto;
   padding: 0 4px;
+} @media (min-width: 1000px) {
+  .feedback .review {
+    max-width: 400px;
+  }
 }
 
 .feedback .review .author {
@@ -733,17 +741,31 @@ main > article {
   background-color: #fff;
   margin-left: 15px;
   margin-right: 16px;
+} @media (min-width: 1000px) {
+  .feedback .review .author .face {
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+  }
 }
 
 .feedback .review .author .name {
   font-size: 20px;
   color: #1565c0;
+} @media (min-width: 1000px) {
+  .feedback .review .author .name {
+    font-size: 24px;
+  }
 }
 
 .feedback .review .author .etc {
   font-size: 12px;
   color: #7f8994;
   margin: 8px 0;
+} @media (min-width: 1000px) {
+  .feedback .review .author .etc {
+    font-size: 14px;
+  }
 }
 
 .feedback .review .content {
@@ -751,6 +773,10 @@ main > article {
   line-height: 1.25;
   color: #7f8994;
   display: flex;
+} @media (min-width: 1000px) {
+  .feedback .review .content {
+    font-size: 16px;
+  }
 }
 
 .feedback .review .content::before {
@@ -759,6 +785,11 @@ main > article {
   margin-right: 16px;
   color: #cce4fe;
   line-height: 140px;
+} @media (min-width: 1000px) {
+  .feedback .review .content::before {
+    font-size: 280px;
+    line-height: 190px;
+  }
 }
 
 .feedback form {
