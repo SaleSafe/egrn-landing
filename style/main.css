@@ -66,6 +66,7 @@ h2 {
   font-size: 24px;
   line-height: 32px;
   font-weight: bold;
+  margin-bottom: 24px;
 
   text-shadow: 0px 4px 9.6px rgba(24, 55, 90, 0.2);
 } @media (min-width: 1000px) {
@@ -488,6 +489,7 @@ main > article {
     height: 60px;
     line-height: 60px;
     margin-right: 0;
+    margin-top: 24px;
     margin-bottom: 36px;
   }
 }
@@ -508,7 +510,7 @@ main > article {
     display: block;
     width: 45px;
     height: 30px;
-    margin: 115px 24px 0;
+    margin: 140px 24px 0;
   }
   .how .arrow img {
     width: 100%;
@@ -554,7 +556,7 @@ main > article {
 .price_card {
   max-width: 250px;
   width: 90%;
-  margin: 32px auto 0;
+  margin: 8px auto 0;
   border-radius: 8px;
   overflow: hidden;
 
@@ -601,14 +603,6 @@ main > article {
 
 .types {
   background-color: #dbeafb;
-}
-
-.types h2 {
-  margin-bottom: 24px;
-} @media (min-width: 1000px) {
-  .types h2 {
-    margin-bottom: 56px;
-  }
 }
 
 @media (min-width: 1000px) {
@@ -712,10 +706,6 @@ main > article {
 .feedback {
   background-color: #e6f0fc;
   border-bottom: 1px solid #dbeafb;
-}
-
-.feedback h2 {
-  margin-bottom: 24px;
 }
 
 .feedback_slider {
