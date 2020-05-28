@@ -514,13 +514,34 @@
       </div>
     </div>
 
-    <form method="post" enctype="text/plain" action="mailto:feedback@gisan.ru?subject=Отзыв">
-      <input name="name" type="text" placeholder="Ваше имя">
-      <textarea name="review" rows="5" placeholder="Ваш отзыв"></textarea>
+    <form
+      method="post"
+      enctype="text/plain"
+      action="mailto:feedback@gisan.ru?subject=Отзыв"
+      onSubmit="submitForm(event)">
+      <input class="form_name" name="name" type="text" placeholder="Ваше имя">
+      <textarea class="form_review" name="review" rows="5" placeholder="Ваш отзыв"></textarea>
       <button role="submit">
         Оставить отзыв
       </button>
     </form>
+    <script>
+      function submitForm (event) {
+        event.preventDefault()
+
+        var mail = "feedback@gisan.ru"
+        var name = document.querySelector('.form_name').value
+        var review = document.querySelector('.form_review').value
+
+        window.location.href = 'mailto:'
+         + mail
+         + '?subject=Отзыв'
+         + '&body='
+         + encodeURI(review);
+
+        return false
+      }
+    </script>
 
   </div>
   </article>
