@@ -356,6 +356,7 @@ main > article {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-bottom: 16px;
   }
 }
 
@@ -463,6 +464,7 @@ main > article {
     align-items: center;
     text-align: center;
   }
+  .how_item:first-child,
   .how_item:last-child {
     width: 220px;
   }
@@ -506,7 +508,7 @@ main > article {
     display: block;
     width: 45px;
     height: 30px;
-    margin: 115px 30px 0;
+    margin: 115px 24px 0;
   }
   .how .arrow img {
     width: 100%;
@@ -608,6 +610,30 @@ main > article {
     margin-bottom: 56px;
   }
 }
+
+@media (min-width: 1000px) {
+  .type_slider .prev,
+  .type_slider .next {
+    display: none;
+  }
+  .type_slider .slides {
+    display: block;
+    max-width: 850px;
+    margin: 0 auto;
+    transform: none !important;
+  }
+
+  .type_slider .js_slide {
+    margin-bottom: 32px;
+  }
+
+  .type_slider .js_slide::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
 
 .types .type {
   max-width: 100%;
