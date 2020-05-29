@@ -324,6 +324,15 @@ main > article {
   margin-left: auto;
 }
 
+.login span {
+  display: none;
+} @media (min-width: 1000px) {
+  .login span {
+    display: inline-block;
+    margin: 0 16px;
+  }
+}
+
 /* Page start */
 
 .page_start {
@@ -394,7 +403,7 @@ main > article {
     padding-top: 124px;
     margin-top: -124px;
 
-    margin-bottom: 24px;
+    padding-bottom: 24px;
   }
 } @media (min-width: 1050px) {
   .hero .lead {
