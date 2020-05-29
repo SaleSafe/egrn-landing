@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap&text=GISAN');
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -184,7 +184,9 @@ main > article {
   padding: 10px;
 } @media (min-width: 750px) {
   .menu {
-    margin-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: -9px;
+    padding: 10px 24px;
   }
 }
 
@@ -295,7 +297,7 @@ main > article {
 
 .logo_placeholder {
   display: none;
-  width: 44px;
+  width: 90px;
   margin-right: auto;
 } @media (min-width: 750px) {
   .logo_placeholder {
@@ -307,18 +309,47 @@ main > article {
   display: none;
 } @media (min-width: 750px) {
   .logo_desktop {
+    pointer-events: none;
     position: sticky;
     top: 17px;
     display: flex;
     z-index: 110;
-    padding-left: 10px;
-    pointer-events: none;
+
+    padding: 0 24px;
   }
 }
 
 .login {
   margin: 0;
   margin-left: auto;
+}
+
+/* Page start */
+
+.page_start {
+  padding: 0 24px;
+} @media (min-width: 750px) {
+  .page_start {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+}
+.logo_image {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 78px;
+  height: 78px;
+  margin-left: 4px;
+  margin-top: 8px;
+} @media (min-width: 750px) {
+  .logo_image {
+    display: block;
+  }
+} @media (min-width: 1000px) {
+  .logo_image {
+
+  }
 }
 
 /* hero */
@@ -328,7 +359,7 @@ main > article {
   padding: 0;
 }
 
-.hero .home {
+.hero .lead {
   text-align: center;
   color: #1565c0;
   line-height: 1.3;
@@ -349,30 +380,113 @@ main > article {
   background-color: #dbeafb;
   background-size: 200%;
   background-position: center;
+} @media (min-width: 600px) {
+  .hero .lead {
+    background: #e6f0fc;
+    text-align: left;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    padding-top: 124px;
+    margin-top: -124px;
+
+    margin-bottom: 24px;
+  }
+} @media (min-width: 1050px) {
+  .hero .lead {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
-.hero .home img {
+.hero .lead .image {
+
+} @media (min-width: 600px) {
+  .hero .lead .image {
+    display: flex;
+    flex-grow: 2;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
+
+.hero .lead .house {
   width: 70%;
   max-width: 250px;
   margin-top: 40px;
   margin-bottom: 20px;
 
   filter: drop-shadow(0px 6px 8px rgba(90, 95, 100, 0.66));
+} @media (min-width: 600px) {
+  .hero .lead .house {
+    width: 100%;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+} @media (min-width: 800px) {
+  .hero .lead .house {
+    display: none;
+  }
 }
 
-.hero .home h1 {
+.hero .lead .houses {
+  display: none;
+  filter: drop-shadow(0px 6px 8px rgba(90, 95, 100, 0.66));
+} @media (min-width: 800px) {
+  .hero .lead .houses {
+    display: block;
+    width: 80%;
+    max-width: 480px;
+  }
+}
+
+
+.hero .lead .text {
+
+} @media (min-width: 600px) {
+  .hero .lead .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 32px;
+    flex-shrink: 0;
+    padding-top: 60px;
+  }
+}
+
+
+.hero .lead h1 {
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 800;
   text-transform: uppercase;
   padding-bottom: 24px;
+} @media (min-width: 750px) {
+  .hero .lead h1 {
+    font-size: 36px;
+    line-height: 1.5;
+    letter-spacing: 1.8px;
+  }
 }
 
-.hero .home p {
-  font-size: 16px;
-  line-height: 24px;
-  padding: 0 30px;
-  padding-bottom: 24px;
+.hero .lead p {
+  font-size: 14px;
+  line-height: 1.5;
   display: none;
+} @media (min-width: 600px) {
+  .hero .lead p {
+    max-width: 310px;
+    display: block;
+    margin-bottom: 8px;
+  }
+} @media (min-width: 750px) {
+  .hero .lead p {
+    max-width: 350px;
+    font-size: 18px;
+  }
 }
 
 .hero form {
@@ -380,6 +494,10 @@ main > article {
   padding: 0 16px;
   padding-bottom: 24px;
   margin: 0 auto;
+} @media (min-width: 750px) {
+  .hero form {
+    opacity: 0;
+  }
 }
 
 .hero form input {
