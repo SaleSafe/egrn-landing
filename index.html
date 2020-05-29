@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description"
+    content="Найдите объект по адресу и получите выписку на квартиру, дом, офис или участок в кратчайшие сроки">
 
-  <title>GISAN ‒ заказ выписок из егрн онлайн</title>
+  <title>GISAN ‒ заказ выписок из ЕГРН онлайн</title>
 
   <link rel="stylesheet" href="./style/main.css">
 </head>
@@ -19,7 +21,7 @@
 
   <div class="logo_placeholder"></div>
 
-  <nav class="dropdown" id="header_nav" aria-label="Main Navigation">
+  <nav class="dropdown" id="header_nav" id="dropdown-title" aria-label="Main Navigation">
     <span class="dropdown__title button" onClick="toggleMenu()">
       <img src="./img/icons/menu.svg" alt="Menu button">
     </span>
@@ -92,7 +94,7 @@
         </div> -->
         <h1>
           Заказ выписок
-          <br>из&nbsp;егрн онлайн
+          <br>из&nbsp;ЕГРН онлайн
         </h1>
         <p>
           Найдите объект по&nbsp;адресу и&nbsp;получите выписку на&nbsp;квартиру, дом, офис или участок в&nbsp;кратчайшие сроки
@@ -552,7 +554,7 @@
       onSubmit="submitForm(event)">
       <input class="form_name" name="name" type="text" placeholder="Ваше имя">
       <textarea class="form_review" name="review" rows="5" placeholder="Ваш отзыв"></textarea>
-      <button role="submit">
+      <button type="submit" role="button">
         Оставить отзыв
       </button>
     </form>
