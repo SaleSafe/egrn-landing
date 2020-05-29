@@ -184,7 +184,7 @@ main > article {
   padding: 10px;
 } @media (min-width: 750px) {
   .menu {
-    margin-top: 30px;
+    margin-top: 34px;
     margin-bottom: -9px;
     padding: 10px 24px;
   }
@@ -278,7 +278,6 @@ main > article {
 .logo {
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
-  letter-spacing: 2.0px;
   color: #1565c0;
   border-top: 3px solid #1565c0;
   border-bottom: 3px solid #1565c0;
@@ -297,11 +296,12 @@ main > article {
 
 .logo_placeholder {
   display: none;
-  width: 90px;
+  width: 80px;
   margin-right: auto;
 } @media (min-width: 750px) {
   .logo_placeholder {
     display: block;
+    width: 68px;
   }
 }
 
@@ -349,8 +349,8 @@ main > article {
   top: 0;
   width: 78px;
   height: 78px;
-  margin-left: 4px;
-  margin-top: 8px;
+  margin-left: -2px;
+  margin-top: 12px;
 } @media (min-width: 750px) {
   .logo_image {
     display: block;
@@ -366,6 +366,20 @@ main > article {
 .hero {
   background-color: #e6f0fc;
   padding: 0;
+} @media (min-width: 600px) {
+  .hero {
+    background: linear-gradient(-129deg, #dbeafb 55%, #e6f0fc 0);
+  }
+} @media (min-width: 750px) {
+  .hero {
+    background: linear-gradient(-129deg, #dbeafb 59%, #e6f0fc 0);
+  }
+} @media (min-width: 1000px) {
+  .hero {
+    /* https://jakearchibald.github.io/svgomg/ */
+    background: url(../img/hero.svg) center bottom no-repeat, linear-gradient(180deg, #e6f0fc 90%, #fff 0), #e6f0fc;;
+    background-size: 1300px;
+  }
 }
 
 .hero .lead {
@@ -391,7 +405,7 @@ main > article {
   background-position: center;
 } @media (min-width: 600px) {
   .hero .lead {
-    background: #e6f0fc;
+    background: none;
     text-align: left;
     display: flex;
     flex-direction: row-reverse;
@@ -401,7 +415,7 @@ main > article {
     margin: 0 auto;
 
     padding-top: 124px;
-    margin-top: -124px;
+    margin-top: -128px;
 
     padding-bottom: 24px;
   }
