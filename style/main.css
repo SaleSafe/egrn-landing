@@ -1020,6 +1020,8 @@ main > article {
   background-color: #fff;
   margin-left: 15px;
   margin-right: 16px;
+  background-size: cover;
+  background-repeat: no-repeat;
 } @media (min-width: 1000px) {
   .feedback .review .author .face {
     height: 100px;
