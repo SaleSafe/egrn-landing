@@ -21,7 +21,7 @@
 
   <div class="logo_placeholder"></div>
 
-  <nav class="dropdown" id="header_nav" id="dropdown-title" aria-label="Main Navigation">
+  <nav class="dropdown" id="dropdown-title" aria-label="Main Navigation">
     <span class="dropdown__title button" onClick="toggleMenu()">
       <img src="./img/icons/menu.svg" alt="Menu button">
     </span>
@@ -89,9 +89,6 @@
         <img class="houses" src="./img/houses.png" alt="">
       </div>
       <div class="text">
-        <!-- <div class="logo_image">
-          123
-        </div> -->
         <h1>
           Заказ выписок
           <br>из&nbsp;ЕГРН онлайн
@@ -107,6 +104,7 @@
       <label for="searchbox">
         <input
           id="searchbox"
+          aria-label="Введите адрес или кадастровый номер"
           placeholder="Введите адрес или кадастровый номер"
           required
           type="text">
@@ -562,8 +560,8 @@
       enctype="text/plain"
       action="mailto:feedback@gisan.ru?subject=Отзыв"
       onSubmit="submitForm(event)">
-      <input class="form_name" name="name" type="text" placeholder="Ваше имя">
-      <textarea class="form_review" name="review" rows="5" placeholder="Ваш отзыв"></textarea>
+      <input aria-label="Ваше имя" class="form_name" name="name" type="text" placeholder="Ваше имя">
+      <textarea aria-label="Ваш отзыв" class="form_review" name="review" rows="5" placeholder="Ваш отзыв"></textarea>
       <button type="submit" role="button">
         Оставить отзыв
       </button>
