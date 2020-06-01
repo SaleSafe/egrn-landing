@@ -102,17 +102,27 @@
       </div>
     </div>
 
+    <div class="form_wrap wrap">
     <form action="">
-      <input
-        placeholder="Введите адрес или кадастровый номер"
-        required
-        type="text">
+      <label for="searchbox">
+        <input
+          id="searchbox"
+          placeholder="Введите адрес или кадастровый номер"
+          required
+          type="text">
+        <span class="tip">
+          Например:
+          <a href="#">г.&nbsp;Москва, ул.&nbsp;Кремль, д.&nbsp;1</a>&nbsp;или
+          <a href="#">77:01:0001001:1007</a>
+        </span>
+      </label>
       <button
         class="button">
           <img class="icon" src="./img/icons/search.svg" alt="search icon">
           Найти
       </button>
     </form>
+    </div>
 
   </article>
 

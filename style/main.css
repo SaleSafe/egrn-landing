@@ -464,6 +464,7 @@ main > article {
     display: block;
     width: 80%;
     max-width: 480px;
+    margin-bottom: 8px;
   }
 }
 
@@ -512,15 +513,58 @@ main > article {
   }
 }
 
+.hero .form_wrap {
+  padding: 0 16px;
+} @media (min-width: 600px) {
+  .hero .form_wrap {
+    padding: 0 24px;
+  }
+}
+
 .hero form {
   text-align: center;
-  padding: 0 16px;
   padding-bottom: 24px;
   margin: 0 auto;
-} @media (min-width: 750px) {
+} @media (min-width: 600px) {
   .hero form {
-    opacity: 0;
+    display: flex;
+    align-items: flex-start;
+    max-width: 700px;
+    margin-left: 0;
+    padding-top: 16px;
+    padding-bottom: 40px;
   }
+} @media (min-width: 1000px) {
+  .hero form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.hero form label {
+
+} @media (min-width: 600px) {
+  .hero form label {
+    flex-grow: 2;
+    z-index: 10;
+  }
+}
+
+.hero form .tip {
+  display: none;
+} @media (min-width: 600px) {
+  .hero form .tip {
+    font-size: 14px;
+    color: #7f8994;
+    text-align: left;
+    padding-left: 18px;
+    display: block;
+  }
+}
+
+.hero form .tip  a {
+  color: #1565c0;
+  text-decoration: none;
 }
 
 .hero form input {
@@ -534,15 +578,31 @@ main > article {
   margin-bottom: 12px;
   font-size: 14px;
   box-sizing: border-box;
+  font-family: inherit;
+} @media (min-width: 600px) {
+  .hero form input {
+    border-radius: 4px 0 0 4px;
+  }
 }
 
 .hero form input::placeholder{
-   text-align: center;
+  text-align: center;
+} @media (min-width: 600px) {
+  .hero form input::placeholder{
+    text-align: left;
+  }
 }
 
 .hero form button {
   width: 100%;
   margin-bottom: 24px;
+} @media (min-width: 600px) {
+  .hero form button {
+    max-width: 160px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    border-radius: 0 4px 4px 0;
+  }
 }
 
 .hero form button .icon {
