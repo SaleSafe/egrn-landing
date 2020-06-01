@@ -1239,6 +1239,9 @@ footer .support nav a {
   color: inherit;
   text-decoration: none;
 }
+footer .support nav a:hover {
+  color: #1565c0;
+}
 
 footer .support .contacts .contact {
   text-decoration: none;
