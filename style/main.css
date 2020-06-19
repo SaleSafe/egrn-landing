@@ -322,6 +322,7 @@ main > article {
 .login {
   margin: 0;
   margin-left: auto;
+  visibility: hidden;
 }
 
 .login span {
@@ -716,6 +717,13 @@ main > article {
 
 .how {
   background-color: #e6f0fc;
+/* No price only */
+  padding-bottom: 48px;
+} @media (min-width: 1000px) {
+  .how {
+    padding-bottom: 56px;
+  }
+/* No price only */
 }
 
 .how ul {
@@ -800,6 +808,7 @@ main > article {
 /* Price */
 
 .price {
+  display: none;
   background-color: #e6f0fc;
   padding-bottom: 40px;
 }
