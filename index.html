@@ -352,7 +352,15 @@
                 <div class="label">
                   Самая популярная выписка
                 </div>
-                <!-- <img src="./img/house.png" alt=""> -->
+                <img
+                  onClick="toggleZoom(event)"
+                  src="./examples/base/base.png" alt="">
+                <p class="example">
+                  <a target="_blank" download
+                    href="./examples/base/base.pdf">
+                      Скачать образец
+                  </a>
+                </p>
               </div>
 
               <h3>Выписка об&nbsp;основных характеристиках и&nbsp;правах</h3>
@@ -375,7 +383,15 @@
                 <div class="label">
                   Для полной проверки объекта
                 </div>
-                <!-- <img src="./img/house.png" alt=""> -->
+                <img
+                  onClick="toggleZoom(event)"
+                  src="./examples/info/info.png" alt="">
+                <p class="example">
+                  <a target="_blank" download
+                    href="./examples/info/info.pdf">
+                      Скачать образец
+                  </a>
+                </p>
               </div>
 
               <h3>
@@ -402,7 +418,15 @@
                 <div class="label">
                   Для проверки чистоты сделки
                 </div>
-                <!-- <img src="./img/house.png" alt=""> -->
+                <img
+                  onClick="toggleZoom(event)"
+                  src="./examples/ownership/ownership.png" alt="">
+                <p class="example">
+                  <a target="_blank" download
+                    href="./examples/ownership/ownership.pdf">
+                      Скачать образец
+                  </a>
+                </p>
               </div>
 
               <h3>
@@ -419,6 +443,12 @@
               </a>
             </div>
           </li>
+
+          <script>
+            function toggleZoom (e) {
+              e.target.classList.toggle('zoomed')
+            }
+          </script>
 
         </ul>
       </div>

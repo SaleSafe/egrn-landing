@@ -914,6 +914,10 @@ main > article {
     display: block;
     clear: both;
   }
+
+  .type_slider .frame {
+    overflow: visible;
+  }
 }
 
 
@@ -931,12 +935,10 @@ main > article {
 .types .type .report {
   width: 250px;
   max-width: 90%;
-  height: 357px;
   margin: 0 auto;
-  background-color: #fff;
-  box-shadow: 0px 12px 13px 0 rgba(24, 55, 90, 0.09);
   margin-bottom: 24px;
   position: relative;
+  cursor: pointer;
 } @media (min-width: 750px) {
   .types .type .report {
     float: left;
@@ -955,10 +957,35 @@ main > article {
   color: #fff;
   font-size: 12px;
   font-weight: bold;
+  pointer-events: none;
 }
 
 .types .type .report img {
   width: 100%;
+  transform-origin: top left;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  box-shadow: 0px 12px 13px 0 rgba(24, 55, 90, 0.09);
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 1000px) {
+  .types .type .report img.zoomed {
+    transform: scale(2);
+    z-index: 20;
+  }
+}
+
+.types .type .example {
+  margin-top: 16px;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+.types .type .example a {
+  color: #7f8994;
+  text-decoration: none;
+  border-bottom: 1px dashed;
 }
 
 .types .type h3 {
