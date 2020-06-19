@@ -958,6 +958,7 @@ main > article {
   font-size: 12px;
   font-weight: bold;
   pointer-events: none;
+  z-index: 11;
 }
 
 .types .type .report img {
