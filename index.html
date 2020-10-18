@@ -106,14 +106,19 @@
     </div>
 
     <div class="form_wrap wrap">
-    <form action="">
+    <form action="/app/">
       <label for="searchbox">
-        <input
-          id="searchbox"
-          aria-label="Введите адрес или кадастровый номер"
-          placeholder="Введите адрес или кадастровый номер"
-          required
-          type="text">
+        <div id="autocomplete" class="autocomplete" data-position="below">
+          <input
+            id="searchbox"
+            name="q"
+            class="autocomplete-input"
+            aria-label="Введите адрес или кадастровый номер"
+            placeholder="Введите адрес или кадастровый номер"
+            required
+            type="text">
+          <ul class="autocomplete-result-list"></ul>
+        </div>
         <span class="tip">
           Например:
           <a href="#">г.&nbsp;Москва, ул.&nbsp;Кремль, д.&nbsp;1</a>&nbsp;или
@@ -895,6 +900,41 @@
       rewind: true,
       rewindPrev: true
     })
+</script>
+
+<script src="./js/autocomplete.min.js"></script>
+<script>
+  const DADATA_API_KEY = '4a5dc6ee0ff842948266dade8b9df275639ca531'
+
+  function search (query) {
+    const prop = key => obj => obj[key]
+
+    const API_URL =
+      'https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address'
+
+    const apiResponse =
+      fetch(API_URL, {
+        method: 'POST',
+        body: JSON.stringify({ query }),
+        headers: {
+          Authorization: `Token ${DADATA_API_KEY}`,
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        }
+      }).then(x => x.json())
+
+    return apiResponse
+      .then(prop('suggestions'))
+      .then(suggestions =>
+        suggestions.map(prop('value')))
+  }
+
+  new Autocomplete('#autocomplete', {
+    search,
+    onSubmit: console.log,
+    autoSelect: true,
+    debounceTime: 500
+  })
 </script>
 </body>
 </html>
