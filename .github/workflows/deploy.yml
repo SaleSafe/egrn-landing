@@ -1,0 +1,22 @@
+name: Deploy to prod
+
+on:
+  push:
+    branches:
+      - release
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: '${{ secrets.GH_TKN }}'
+      - name: Copy file to PROD
+        uses: appleboy/scp-action@master
+        env:
+          HOST: ${{ secrets.HOST }}
+          USERNAME: ${{ secrets.USERNAME }}
+          KEY: ${{ secrets.SSHKEY }}
+        with:
+          source: "*.*"
+          target: "/home/gisan/app/scp/egrn-landing"
