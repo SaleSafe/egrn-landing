@@ -17,6 +17,7 @@ jobs:
           HOST: ${{ secrets.HOST }}
           USERNAME: ${{ secrets.USERNAME }}
           KEY: ${{ secrets.SSHKEY }}
+          PORT: ${{ secrets.PORT }}
         with:
           source: "*.*"
           target: "/home/gisan/app/scp/egrn-landing"
