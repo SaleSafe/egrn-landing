@@ -20,5 +20,5 @@ jobs:
           PORT: ${{ secrets.PORT }}
           PASSPHRASE: ${{ secrets.PASSPHRASE }}
         with:
-          source: "*.*"
+          source: "./"
           target: "/home/gisan/app/scp/egrn-landing"
